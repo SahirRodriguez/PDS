@@ -1,4 +1,4 @@
-Graficación de señales continuas y señales discretas
+Graficado de señales continuas y señales discretas
 
 Este proyecto presenta la siguiente estructura: 
 
