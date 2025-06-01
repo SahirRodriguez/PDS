@@ -8,9 +8,10 @@ from scipy.signal import square, sawtooth
 f=2 # Frecuencia de 2 Hz
 t = np.linspace(-1,5,1000) # Tiempo continuo de -1 a 5 segundos con 1000 puntos
 
+# Definimos las señales continuas
 x1t = np.sin(2*np.pi*2*t) # Sinusoide de 2 Hz
 u = np.heaviside(t, 1) 
-x2t = np.exp(-2 * t) * u # Escalon unitario
+x2t = np.exp(-2 * t) * u # Escalon unitario 
 x3t = sawtooth(2 * np.pi * f * t, width=0.5) # Señal triangular de 2 Hz 
 x4t = square(2 * np.pi * f * t) # Señal cuadrada de 2Hz
 
@@ -19,6 +20,7 @@ Ts= 0.01 # Periodo de muestreo
 n = np.arange(-100,500) # rango de muestras
 tn= n*Ts  # conversión a tiempo muestreado
 
+# Definimos las señales discretas
 x1tn = np.sin(2*np.pi*f*tn) # Señal muestreada de sinusoide de 2 Hz
 ut = np.heaviside(tn, 1)
 x2tn = np.exp(-2 * tn) * ut # Escalon unitario muestreado

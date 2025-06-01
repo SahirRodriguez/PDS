@@ -1,4 +1,5 @@
 import sys
+import subprocess
 from src.Activity_1 import continuous_sine, discrete_sine
 from src.Activity_2 import understanding_freq
 
@@ -9,8 +10,10 @@ def main(options):
     elif options[1] == "act_2":
         if len(args) > 2:
             understanding_freq(options[2])
-        else:
-            print("Please give a frequency. Example: python main.py act_2 2")
+    elif options[1] == "tarea1":
+        subprocess.run(["python", "src/tarea1.py"])
+    else:
+        print("Please give a frequency. Example: python main.py act_2 2")
 
 
 if __name__ == '__main__':
