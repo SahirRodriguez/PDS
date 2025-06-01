@@ -6,14 +6,16 @@ Este repositorio contiene scripts relacionados con el análisis y visualización
 
 ## Estructura del Proyecto
 
-PDS/
+.
 ├── main.py
+├── .gitignore
+├── requirements.txt
+├── README.md
 ├── src/
-│   ├── Activity_1.py
-│   ├── Activity_2.py
-│   ├── tarea1.py
-└── README.md
-
+    ├──utils/
+       ├── grapher.py
+    ├── tarea1.py
+ 
 
 ---
 
