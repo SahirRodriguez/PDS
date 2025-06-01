@@ -1,17 +1,42 @@
-Graficado de señales continuas y señales discretas
+# 🧪 Proyecto de Señales - Actividades y Tareas
 
-Este proyecto presenta la siguiente estructura: 
+Este repositorio contiene scripts relacionados con el análisis y visualización de señales, incluyendo señales continuas y discretas. Se incluyen actividades prácticas implementadas en Python usando `matplotlib`, `numpy` y funciones de `scipy`.
+
+---
+
+## Estructura del Proyecto
 
 PDS/
 ├── main.py
 ├── src/
-│ ├── Activity_1.py
-│ ├── Activity_2.py
-│ ├── tarea1.py
+│   ├── Activity_1.py
+│   ├── Activity_2.py
+│   ├── tarea1.py
 └── README.md
 
-Donde el main.py actúa como un menú desde el cual de pueden definir las frecuencias de las actividades 1 y 2 y desde el cual se puede ejecutar la Tarea 1.
-Para ello solo es necesario ingresar el comando python main.py tarea1 desde la consola o desde powershell después de ubicar la carpeta.
-Dichos programas al ser ejecutados deberían mostrar gráficas de acuerdo a los datos ingresados o los definidos en el programa.
 
-Gracias por leer mi primer README y ejecutar mi primer programa de un repositorio de GitHub.
+---
+
+## Cómo ejecutar
+
+### Requisitos
+Asegúrate de tener Python 3.x instalado y los siguientes paquetes:
+
+```bash
+pip install numpy matplotlib scipy
+
+Para ejecutar ingresa el siguiente comando en la terminal de CMD o powerShell:
+python main.py <actividad> [argumentos]
+
+Puedes elegir entre las siguientes actividades1:
+python main.py act_1
+python main.py act_2 5
+python main.py tarea1
+
+Notas adicionales
+main.py actúa como una interfaz desde la línea de comandos para organizar el trabajo por actividad.
+
+Puedes extender este sistema agregando más funciones dentro de la carpeta src/ y adaptando main.py.
+
+Licencia
+Este proyecto se entrega como parte de prácticas educativas. Uso libre con fines académicos.
