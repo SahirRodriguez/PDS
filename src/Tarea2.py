@@ -1,7 +1,5 @@
 
 import numpy as np
-import matplotlib.pyplot as plt
-from scipy import signal
 from src.utils.grapher import continuous_plotter, discrete_plotter
 
 
