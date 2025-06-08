@@ -17,11 +17,10 @@ def dac_analisis(bits):
     salidas = entradas * paso
 
     plt.figure()
-    plt.step(entradas, salidas, where='post', label=f"DAC {N} bits")
+    plt.step(entradas, salidas, label=f"DAC {N} bits")
     plt.xlabel("Entrada digital")
     plt.ylabel("Salida analógica (V)")
     plt.title(f"Salida de DAC con {N} bits (VFS = {VFS}V)")
     plt.grid(True)
-    plt.legend()
     plt.show()
 
